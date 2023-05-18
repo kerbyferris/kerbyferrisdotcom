@@ -28,9 +28,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main
-        className={`${text.className} grid min-w-full place-items-center bg-[#111]`}
-      >
+      <main className={`${text.className} grid min-w-full place-items-center`}>
         <div className="max-w-screen-2xl">
           <nav className="min-w-full bg-header_bg_image bg-cover pl-8 font-bold text-white">
             <h1
