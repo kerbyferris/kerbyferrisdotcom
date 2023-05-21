@@ -11,3 +11,5 @@ Some nextjs about me
   - fabulosa pencil
 - make images not displayed on home page display in categories
 - things for code
+- multiple category image selection bug
+- prefetching image and font
