@@ -32,18 +32,9 @@ const Home: NextPage = () => {
         <div className="max-w-screen-2xl">
           <nav className="min-w-full bg-header_bg_image bg-cover pl-8 font-bold text-white">
             <h1
-              className="py-5 text-8xl uppercase leading-[72px] hover:text-yellow-300 lg:text-9xl"
+              className="cursor-pointer py-5 text-8xl uppercase leading-[72px] hover:text-yellow-300 lg:text-9xl"
               onClick={() => setCurrentCategory(Categories.None)}
             >
-              {/* <span */}
-              {/*   className={ */}
-              {/*     currentCategory === "" */}
-              {/*       ? "align-text-top text-yellow-300" */}
-              {/*       : "hidden" */}
-              {/*   } */}
-              {/* > */}
-              {/*   &#9656; */}
-              {/* </span> */}
               Kerby Ferris
             </h1>
             <ul className="px-[-2px] py-5 text-7xl leading-[53px] lg:text-8xl lg:leading-[72px]">
