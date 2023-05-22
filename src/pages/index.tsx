@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import { type NextPage } from "next";
 import Head from "next/head";
-import { Images, Categories } from "~/lib/data";
+import { Media, Categories } from "~/lib/data";
 import WorkImage from "~/components/work-image";
 import { useState } from "react";
 
@@ -15,7 +15,10 @@ export const text = Inter({
 
 const Home: NextPage = () => {
   const [currentCategory, setCurrentCategory] = useState(Categories.None);
-  const homePageImages = Images.filter((image) => image.homePage);
+  const media =
+    currentCategory === Categories.None
+      ? Media.filter((media) => media.homePage)
+      : Media.filter((media) => media.categories.includes(currentCategory));
   const categories = Object.values(Categories).filter(
     (category) => category !== Categories.None
   );
@@ -65,21 +68,20 @@ const Home: NextPage = () => {
             </ul>
           </nav>
           <div className="justify-items-center md:grid md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {homePageImages.map(({ src, poster, categories }) => {
-              if (
-                currentCategory === Categories.None ||
-                categories.includes(currentCategory)
-              ) {
-                return (
-                  <div
-                    key={src}
-                    className="grid place-items-center hover:opacity-90"
-                  >
-                    <WorkImage src={src} poster={poster} />
-                  </div>
-                );
-              }
-            })}
+            {media.map(({ src, poster, loop, externalLink }) => (
+              <div
+                key={src}
+                className="grid place-items-center hover:opacity-90"
+              >
+                {externalLink ? (
+                  <Link href={externalLink} target="_blank">
+                    <WorkImage src={src} poster={poster} loop={loop} />
+                  </Link>
+                ) : (
+                  <WorkImage src={src} poster={poster} loop={loop} />
+                )}
+              </div>
+            ))}
           </div>
           <footer>
             <ul className="py-10 text-4xl font-bold leading-[30px] text-gray-300">
@@ -89,7 +91,7 @@ const Home: NextPage = () => {
                   href="https://github.com/kerbyferris"
                   target="_blank"
                 >
-                  -&gt; github{" "}
+                  -&gt; github
                 </Link>
               </li>
               <li>
