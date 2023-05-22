@@ -61,7 +61,7 @@ const Media: Media[] = [
   },
   {
     src: "/video/modularOnTheSpotLA.mp4",
-    poster: "/img/playinglivemodularonthespot-1.png",
+    poster: "/img/playinglivemodularonthespot.png",
     homePage: true,
     categories: [Categories.Music],
   },
@@ -456,21 +456,21 @@ const Media: Media[] = [
     homePage: false,
     categories: [Categories.Music],
   },
-  {
-    src: "/img/playinglivefantasminavocals.png",
-    homePage: false,
-    categories: [Categories.Music],
-  },
-  {
-    src: "/img/playinglivemodularonthespot-1.png",
-    homePage: false,
-    categories: [Categories.Music],
-  },
-  {
-    src: "/img/playinglivemodularonthespot.png",
-    homePage: false,
-    categories: [Categories.Music],
-  },
+  // {
+  //   src: "/img/playinglivefantasminavocals.png",
+  //   homePage: false,
+  //   categories: [Categories.Music],
+  // },
+  // {
+  //   src: "/img/playinglivemodularonthespot-1.png",
+  //   homePage: false,
+  //   categories: [Categories.Music],
+  // },
+  // {
+  //   src: "/img/playinglivemodularonthespot.png",
+  //   homePage: false,
+  //   categories: [Categories.Music],
+  // },
   {
     src: "/img/sheddistance.png",
     homePage: false,
