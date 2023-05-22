@@ -11,6 +11,7 @@ import { useState } from "react";
 export const text = Inter({
   subsets: ["latin"],
   weight: ["400", "600"],
+  display: "optional",
 });
 
 const Home: NextPage = () => {
