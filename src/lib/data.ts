@@ -14,7 +14,7 @@ enum Projects {
   BoxTruck = "BoxTruck",
 }
 
-type Media = {
+export type MediaType = {
   src: string;
   homePage: boolean;
   categories: Categories[];
@@ -25,7 +25,7 @@ type Media = {
   externalLink?: string;
 };
 
-const Media: Media[] = [
+const Media: MediaType[] = [
   {
     src: "/video/meetingTheUniverseHalfway.mp4",
     poster: "/img/meetinguniverse.png",

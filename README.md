@@ -6,10 +6,9 @@ Some nextjs about me
 
 - galleries?
 - click on image for big version
-- videos to edit (make square?)
+- videos to edit (make square)
   - bluetooth module
   - fabulosa pencil
-- make images not displayed on home page display in categories
+  - carol
 - prefetching image and font
 - Media as union type of Image | Video
-- youJoy video poster image
