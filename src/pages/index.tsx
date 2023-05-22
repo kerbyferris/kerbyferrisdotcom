@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import { type NextPage } from "next";
 import Head from "next/head";
 import { Media, Categories } from "~/lib/data";
