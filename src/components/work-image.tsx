@@ -2,12 +2,21 @@ import Image from "next/image";
 
 type WorkImageProps = {
   src: string;
-  poster: string | undefined;
+  poster?: string;
+  loop?: boolean;
 };
 
-const WorkImage = ({ src, poster }: WorkImageProps) =>
+const WorkImage = ({ src, poster, loop }: WorkImageProps) =>
   poster ? (
-    <video loop playsInline controls poster={poster} width={500} height={500}>
+    <video
+      loop={loop === undefined ? true : loop}
+      playsInline={true}
+      controls={true}
+      poster={poster}
+      width={500}
+      height={500}
+      preload="none"
+    >
       <source src={src} type="video/mp4" />
     </video>
   ) : (

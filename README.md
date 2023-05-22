@@ -10,6 +10,6 @@ Some nextjs about me
   - bluetooth module
   - fabulosa pencil
 - make images not displayed on home page display in categories
-- things for code
-- multiple category image selection bug
 - prefetching image and font
+- Media as union type of Image | Video
+- youJoy video poster image
