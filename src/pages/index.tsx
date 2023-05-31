@@ -5,7 +5,8 @@ import { Inter } from "next/font/google";
 import { type NextPage } from "next";
 import Head from "next/head";
 import { Media, Categories } from "~/lib/data";
-import WorkImage from "~/components/work-image";
+import GridItem from "~/components/grid-item";
+import Footer from "~/components/footer";
 import { useState } from "react";
 
 export const text = Inter({
@@ -74,48 +75,16 @@ const Home: NextPage = () => {
                 key={src}
                 className="grid place-items-center hover:opacity-90"
               >
-                {externalLink ? (
-                  <Link href={externalLink} target="_blank">
-                    <WorkImage src={src} poster={poster} loop={loop} />
-                  </Link>
-                ) : (
-                  <WorkImage src={src} poster={poster} loop={loop} />
-                )}
+                <GridItem
+                  src={src}
+                  poster={poster}
+                  loop={loop}
+                  externalLink={externalLink}
+                />
               </div>
             ))}
           </div>
-          <footer>
-            <ul className="py-10 text-4xl font-bold leading-[30px] text-gray-300">
-              <li>
-                <Link
-                  className="hover:text-yellow-300"
-                  href="https://github.com/kerbyferris"
-                  target="_blank"
-                >
-                  -&gt; github
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="hover:text-yellow-300"
-                  href="https://instagram.com/kerbyferris"
-                  target="_blank"
-                >
-                  -&gt; instagram
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="hover:text-yellow-300"
-                  href="https://kerbyferris.bandcamp.com"
-                  target="_blank"
-                >
-                  -&gt; bandcamp
-                </Link>
-              </li>
-              <li>-&gt; email (kerbyferris[at]gmail[dot]com)</li>
-            </ul>
-          </footer>
+          <Footer />
         </div>
       </main>
     </>
