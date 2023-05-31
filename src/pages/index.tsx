@@ -3,9 +3,9 @@
 import { Inter } from "next/font/google";
 import { type NextPage } from "next";
 import Head from "next/head";
-import { Media, Categories } from "~/lib/data";
+import { Categories } from "~/lib/data";
 import Navigation from "~/components/navigation";
-import GridItem from "~/components/grid-item";
+import Content from "~/components/content";
 import Footer from "~/components/footer";
 import { useState } from "react";
 
@@ -17,10 +17,6 @@ export const text = Inter({
 
 const Home: NextPage = () => {
   const [currentCategory, setCurrentCategory] = useState(Categories.None);
-  const media =
-    currentCategory === Categories.None
-      ? Media.filter((media) => media.homePage)
-      : Media.filter((media) => media.categories.includes(currentCategory));
 
   return (
     <>
@@ -36,21 +32,9 @@ const Home: NextPage = () => {
             currentCategory={currentCategory}
             handler={setCurrentCategory}
           />
-          <div className="justify-items-center md:grid md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {media.map(({ src, poster, loop, externalLink }) => (
-              <div
-                key={src}
-                className="grid place-items-center hover:opacity-90"
-              >
-                <GridItem
-                  src={src}
-                  poster={poster}
-                  loop={loop}
-                  externalLink={externalLink}
-                />
-              </div>
-            ))}
-          </div>
+
+          <Content currentCategory={currentCategory} />
+
           <Footer />
         </div>
       </main>
