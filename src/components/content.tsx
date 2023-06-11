@@ -1,14 +1,15 @@
 import { Media, Categories } from "~/lib/data";
 import GridItem from "./grid-item";
+import { selectCategoryState } from "../store/categorySlice";
+import { useAppSelector } from "../store/hooks";
 
-type ContentProps = {
-  currentCategory: Categories;
-};
-const Content = ({ currentCategory }: ContentProps) => {
+const Content = () => {
+  const categoryState = useAppSelector(selectCategoryState);
+
   const media =
-    currentCategory === Categories.None
-      ? Media.filter((media) => media.homePage)
-      : Media.filter((media) => media.categories.includes(currentCategory));
+    categoryState === Categories.None
+      ? Media.filter((m) => m.homePage)
+      : Media.filter((m) => m.categories.includes(categoryState));
 
   return (
     <div className="justify-items-center md:grid md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

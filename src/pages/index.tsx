@@ -3,11 +3,9 @@
 import { Inter } from "next/font/google";
 import { type NextPage } from "next";
 import Head from "next/head";
-import { Categories } from "~/lib/data";
-import Navigation from "~/components/navigation";
+import Header from "~/components/header";
 import Content from "~/components/content";
 import Footer from "~/components/footer";
-import { useState } from "react";
 
 export const text = Inter({
   subsets: ["latin"],
@@ -16,8 +14,6 @@ export const text = Inter({
 });
 
 const Home: NextPage = () => {
-  const [currentCategory, setCurrentCategory] = useState(Categories.None);
-
   return (
     <>
       <Head>
@@ -28,12 +24,9 @@ const Home: NextPage = () => {
 
       <main className={`${text.className} grid min-w-full place-items-center`}>
         <div className="max-w-screen-2xl">
-          <Navigation
-            currentCategory={currentCategory}
-            handler={setCurrentCategory}
-          />
+          <Header />
 
-          <Content currentCategory={currentCategory} />
+          <Content />
 
           <Footer />
         </div>

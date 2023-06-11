@@ -7,6 +7,7 @@ enum Categories {
 }
 
 enum Projects {
+  None = "",
   Bathhouse = "bathhouse",
   BabyPigFeederV1 = "babypigfeederv1",
   BabyPigFeederV2 = "babypigfeederv2",
