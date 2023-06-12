@@ -5,7 +5,7 @@ import { useAppSelector, useAppDispatch } from "../store/hooks";
 
 const Header = () => {
   const categories = Object.values(Categories).filter(
-    (category) => category !== Categories.None
+    (c) => c !== Categories.None
   );
 
   const categoryState = useAppSelector(selectCategoryState);
@@ -20,7 +20,7 @@ const Header = () => {
         Kerby Ferris
       </h1>
       <ul className="px-[-2px] py-5 text-7xl leading-[53px] lg:text-8xl lg:leading-[72px]">
-        {categories.map((category) => (
+        {categories.map((category: string) => (
           <li key={category}>
             <Link
               className={
