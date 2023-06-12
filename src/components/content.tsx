@@ -9,7 +9,7 @@ const Content = () => {
   const media =
     categoryState === Categories.None
       ? Media.filter((m) => m.homePage)
-      : Media.filter((m) => m.categories.includes(categoryState));
+      : Media.filter((m) => m.categories.includes(categoryState as Categories));
 
   return (
     <div className="justify-items-center md:grid md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

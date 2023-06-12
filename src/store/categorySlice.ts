@@ -1,21 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "./store";
-import { Categories } from "~/lib/data";
 
 interface CategoryState {
-  value: Categories;
+  value: string;
 }
 
 const initialState: CategoryState = {
-  value: Categories.None,
+  value: "",
 };
 
 export const categorySlice = createSlice({
   name: "category",
   initialState,
   reducers: {
-    setCategoryState: (state, action: PayloadAction<Categories>) => {
+    setCategoryState: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
   },
