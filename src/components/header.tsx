@@ -13,11 +13,14 @@ const Header = () => {
 
   return (
     <nav className="min-w-full bg-header_bg_image bg-cover pl-8 font-bold text-white">
-      <h1
-        className="cursor-pointer py-5 text-8xl uppercase leading-[72px] hover:text-yellow-300 lg:text-9xl"
-        onClick={() => dispatch(setCategoryState(Categories.None))}
-      >
-        Kerby Ferris
+      <h1>
+        <Link
+          className="cursor-pointer py-5 text-8xl uppercase leading-[72px] hover:text-yellow-300 lg:text-9xl"
+          onClick={() => dispatch(setCategoryState(Categories.None))}
+          href="/"
+        >
+          Kerby Ferris
+        </Link>
       </h1>
       <ul className="px-[-2px] py-5 text-7xl leading-[53px] lg:text-8xl lg:leading-[72px]">
         {categories.map((category: string) => (
@@ -29,7 +32,7 @@ const Header = () => {
                   : "hover:text-yellow-300"
               }
               onClick={() => dispatch(setCategoryState(category))}
-              href="/"
+              href={category}
             >
               <span
                 className={
