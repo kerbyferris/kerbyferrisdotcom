@@ -12,3 +12,4 @@ Some nextjs about me
   - carol
 - prefetching image and font
 - Media as union type of Image | Video
+- host media somewhere besides github
