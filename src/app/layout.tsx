@@ -2,7 +2,7 @@
 
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import "~/styles/globals.css";
+import "./globals.css";
 import Header from "~/components/header";
 import Footer from "~/components/footer";
 import { Providers } from "./providers";
