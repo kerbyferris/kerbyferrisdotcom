@@ -10,6 +10,5 @@ Some nextjs about me
   - bluetooth module
   - fabulosa pencil
   - carol
-- prefetching image and font
+- mp4s and gifs into s3
 - Media as union type of Image | Video
-- host media somewhere besides github
