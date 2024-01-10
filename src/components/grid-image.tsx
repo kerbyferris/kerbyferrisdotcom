@@ -5,7 +5,7 @@ type GridImageProps = {
 };
 
 const GridImage = ({ src }: GridImageProps) => (
-  <Image src={src} alt="working" width={500} height={500} />
+  <Image src={src} alt="" width={500} height={500} />
 );
 
 export default GridImage;
