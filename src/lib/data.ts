@@ -39,7 +39,7 @@ const Media: MediaType[] = [
     categories: [Categories.Building],
   },
   {
-    src: "https://www.dropbox.com/scl/fi/gyd6xmr92iaappxpd3bdx/3dprint_croped.gif?rlkey=uyscir1nuqdbocujxinoob9gq&dl=0",
+    src: "https://www.dropbox.com/scl/fi/gyd6xmr92iaappxpd3bdx/3dprint_croped.gif?rlkey=uyscir1nuqdbocujxinoob9gq&dl=0&raw=1",
     homePage: true,
     categories: [Categories.Building],
   },
