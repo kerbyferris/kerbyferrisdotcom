@@ -2,6 +2,16 @@
 
 Some nextjs about me
 
+## Dev
+
+```sh
+yarn next dev
+```
+
+## Deploy
+
+Main branch push triggers deploy on Vercel
+
 ## TODO
 
 - galleries?
@@ -10,5 +20,4 @@ Some nextjs about me
   - bluetooth module
   - fabulosa pencil
   - carol
-- mp4s and gifs into s3
 - Media as union type of Image | Video
