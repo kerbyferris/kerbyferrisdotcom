@@ -28,7 +28,7 @@ export type MediaType = {
 
 const Media: MediaType[] = [
   {
-    src: "/video/meetingTheUniverseHalfway.mp4",
+    src: "https://www.dropbox.com/scl/fi/ubycyk8l5nidkalq5vxrf/meetingTheUniverseHalfway.mp4?rlkey=oktyok6qss2f4nyggqpvy9hgm&dl=0&raw=1",
     poster: "/img/meetinguniverse.png",
     categories: [Categories.Music],
     homePage: true,
@@ -39,7 +39,7 @@ const Media: MediaType[] = [
     categories: [Categories.Building],
   },
   {
-    src: "/img/3dprint_croped.gif",
+    src: "https://www.dropbox.com/scl/fi/gyd6xmr92iaappxpd3bdx/3dprint_croped.gif?rlkey=uyscir1nuqdbocujxinoob9gq&dl=0&raw=1",
     homePage: true,
     categories: [Categories.Building],
   },
@@ -61,7 +61,7 @@ const Media: MediaType[] = [
     categories: [Categories.Electronics],
   },
   {
-    src: "/video/modularOnTheSpotLA.mp4",
+    src: "https://www.dropbox.com/scl/fi/6mx9mvgqkmmvrnevmlxou/modularOnTheSpotLA.mp4?rlkey=1jpwbki08jp8nc43r7depsey1&dl=0&raw=1",
     poster: "/img/playinglivemodularonthespot.png",
     homePage: true,
     categories: [Categories.Music],
@@ -77,7 +77,7 @@ const Media: MediaType[] = [
     categories: [Categories.Electronics],
   },
   {
-    src: "/video/anotherScienceIsPossible.mp4",
+    src: "https://www.dropbox.com/scl/fi/zons5n7dm0swwqubstxp6/anotherScienceIsPossible.mp4?rlkey=5fe22o4ls6e82x4x4cjo329fh&dl=0&raw=1",
     poster: "/img/anotherscience.png",
     homePage: true,
     categories: [Categories.Music],
@@ -126,7 +126,7 @@ const Media: MediaType[] = [
     categories: [Categories.Building],
   },
   {
-    src: "/video/betweenPastAndFuture.mp4",
+    src: "https://www.dropbox.com/scl/fi/tq0boh9dakh99sqwvhov7/betweenPastAndFuture.mp4?rlkey=29vqaiu47e05pnc444z3r5u6r&dl=0&raw=1",
     poster: "/img/betweenpastandfuture.png",
     homePage: true,
     categories: [Categories.Music],
@@ -584,7 +584,7 @@ const Media: MediaType[] = [
     categories: [Categories.Electronics],
   },
   {
-    src: "/video/youJoy.mp4#t=00:02:32",
+    src: "https://www.dropbox.com/scl/fi/nx7sukngiajj8tonrngmv/youJoy.mp4?rlkey=h1ru0yeoigtvw83ho0h1hh68g&dl=0&raw=1#t=00:02:32",
     poster: "/img/youjoywithcode.png",
     loop: false,
     homePage: false,
