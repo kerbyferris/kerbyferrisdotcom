@@ -24,6 +24,7 @@ export type MediaType = {
   playsInline?: true;
   loop?: boolean;
   externalLink?: string;
+  unoptimized?: boolean;
 };
 
 const Media: MediaType[] = [
@@ -39,10 +40,11 @@ const Media: MediaType[] = [
     categories: [Categories.Building],
   },
   {
-    // src: "https://www.dropbox.com/scl/fi/br9h2dtbynxd5u2mvdze9/3dprint.gif?rlkey=r3fq8ce4t7kokcchgv52mfzul&dl=0&raw=1",
-    src: "/img/3dprint_croped.gif",
+    src: "https://www.dropbox.com/scl/fi/br9h2dtbynxd5u2mvdze9/3dprint.gif?rlkey=r3fq8ce4t7kokcchgv52mfzul&dl=0&raw=1",
+    // src: "/img/3dprint_croped.gif",
     homePage: true,
     categories: [Categories.Building],
+    unoptimized: true,
   },
   {
     src: "/img/boxtruckdoorinstallday.png",
