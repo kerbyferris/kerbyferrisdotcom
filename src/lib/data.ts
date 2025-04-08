@@ -593,12 +593,12 @@ const Media: MediaType[] = [
     homePage: false,
     categories: [Categories.Music, Categories.Electronics, Categories.Code],
   },
-  {
-    src: "/img/chakrates.png",
-    homePage: false,
-    categories: [Categories.Code],
-    externalLink: "https://kerbyferris.github.io/chakrates/",
-  },
+  // {
+  //   src: "/img/chakrates.png",
+  //   homePage: false,
+  //   categories: [Categories.Code],
+  //   externalLink: "https://kerbyferris.github.io/chakrates/",
+  // },
   {
     src: "/img/bodycall.png",
     homePage: false,
